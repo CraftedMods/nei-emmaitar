@@ -19,7 +19,7 @@ apply plugin: 'forge'
 
 version = "0.1.0-BETA"
 group= "craftedMods"
-archivesBaseName = "nei-emmaitar"
+archivesBaseName = "neiEmmaitar"
 
 srcCompat = JavaVersion.VERSION_1_8
 targetCompat = JavaVersion.VERSION_1_8
