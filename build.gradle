@@ -30,8 +30,9 @@ minecraft {
 }
 
 jar{
-   from('src/main/java') {
+   from('src/main/java/craftedMods/neiEmmaitar/') {
       include 'lang/**'
+      into 'craftedMods/neiEmmaitar/'
    }
    
    from('./') {

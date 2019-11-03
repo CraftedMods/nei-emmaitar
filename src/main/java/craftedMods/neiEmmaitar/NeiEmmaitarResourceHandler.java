@@ -23,7 +23,6 @@ import java.util.function.Supplier;
 import craftedMods.recipes.api.RegisteredHandler;
 import craftedMods.recipes.api.ResourceHandler;
 import craftedMods.recipes.base.ClasspathResourceLoader;
-import craftedMods.recipes.base.RecipeHandlerResourceLoader;
 import craftedMods.recipes.base.RecipeHandlerResourceLocation;
 import net.minecraft.util.ResourceLocation;
 
@@ -32,7 +31,9 @@ public class NeiEmmaitarResourceHandler implements ResourceHandler {
 
 	@Override
 	public Map<ResourceLocation, Supplier<InputStream>> getResources() {
-		RecipeHandlerResourceLoader resourceLoader = new ClasspathResourceLoader();
+		ClasspathResourceLoader resourceLoader = new ClasspathResourceLoader();
+		resourceLoader.setPrefix("craftedMods/neiEmmaitar/");
+
 		resourceLoader.registerResource(new RecipeHandlerResourceLocation("lang/en_US.lang"));
 		resourceLoader.registerResource(new RecipeHandlerResourceLocation("lang/de_DE.lang"));
 		return resourceLoader.loadResources();
