@@ -36,6 +36,7 @@ public class NeiEmmaitarResourceHandler implements ResourceHandler {
 
 		resourceLoader.registerResource(new RecipeHandlerResourceLocation("lang/en_US.lang"));
 		resourceLoader.registerResource(new RecipeHandlerResourceLocation("lang/de_DE.lang"));
+		resourceLoader.registerResource(new RecipeHandlerResourceLocation("lang/nl_NL.lang"));
 		return resourceLoader.loadResources();
 	}
 

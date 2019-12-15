@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.lwjgl.opengl.GL11;
 
 import craftedMods.recipes.api.RecipeHandlerCraftingHelper;
@@ -167,7 +168,7 @@ public class EmmaitarPaintingRecipeHandler extends CraftingGridRecipeHandler {
 		}
 
 		@Override
-		public void renderForeground(EmmaitarPaintingRecipeHandler arg0, AbstractRecipe arg1, int arg2) {
+		public void renderForeground(EmmaitarPaintingRecipeHandler arg0, AbstractRecipe arg1, int cycleticks) {
 			EmmaitarPaintingRecipe recipe = (EmmaitarPaintingRecipe) arg1;
 			CustomPaintingData data = ClientPaintingCatalogue.lookup(recipe.getData().makeReference(), true);
 
@@ -202,6 +203,18 @@ public class EmmaitarPaintingRecipeHandler extends CraftingGridRecipeHandler {
 
 				RecipeHandlerRendererUtils.getInstance().drawTexturedRectangle(0, 0, 0, 0, 256, 256);
 				GL11.glPopMatrix();
+			} else {
+				// Render an animated placeholder text
+
+				String placeholderText = StatCollector
+						.translateToLocal("neiEmmaitar.handler.paintings.loadingPlaceholder") + " ";
+
+				String points = StringUtils.repeat('.', cycleticks % 60 / 15);
+
+				int placeholderTextWidth = RecipeHandlerRendererUtils.getInstance().getStringWidth(placeholderText);
+
+				RecipeHandlerRendererUtils.getInstance().drawText(placeholderText + points,
+						(int) (84 - (placeholderTextWidth / 2.0f)), 91, 0x00FF00, true);
 			}
 
 		}

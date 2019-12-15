@@ -1,2 +1,3 @@
 neiEmmaitar.handler.paintings.name=Emmaitar Paintings
-neiEmmaitar.handler.paintings.recipeViewer.tooltip=Show all paintings
+neiEmmaitar.handler.paintings.recipeViewer.tooltip=Show All Paintings
+neiEmmaitar.handler.paintings.loadingPlaceholder=Loading painting
