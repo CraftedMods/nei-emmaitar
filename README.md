@@ -3,7 +3,7 @@ The plugin adds NEI support for the paintings of the Emmaitar Mod (see https://g
 ## Dependencies
 If you want to setup a development environment, you'll need the following dependencies:
 - [Emmaitar v1.2.2](https://github.com/TheChildWalrus/Emmaitar/raw/8917887deb642bf6b3b7117cc7cdc0c4a63dc999/Emmaitar-1.2.2.jar)
-- [neiRecipeHandlers-1.0.1-BETA.jar](https://github.com/CraftedMods/nei-recipe-handlers/releases)
+- [neiRecipeHandlers-1.0.2-BETA.jar](https://github.com/CraftedMods/nei-recipe-handlers/releases)
 
 The plugin was created with the MinecraftForge version "1.7.10-10.13.4.1614".  
 You need to download the specified JARs and add them to a 'libs' folder.
