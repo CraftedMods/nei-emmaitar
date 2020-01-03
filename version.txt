@@ -1,1 +1,1 @@
-1.0.0-BETA|https://www.curseforge.com/minecraft/mc-mods/nei-emmaitar/files|https://github.com/CraftedMods/nei-emmaitar/blob/master/CHANGELOG.md
+0.1.0-BETA|https://www.curseforge.com/minecraft/mc-mods/nei-emmaitar/files|https://github.com/CraftedMods/nei-emmaitar/blob/master/CHANGELOG.md
