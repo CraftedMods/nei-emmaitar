@@ -8,6 +8,6 @@ If you want to setup a development environment, you'll need the following depend
 The plugin was created with the MinecraftForge version "1.7.10-10.13.4.1614".  
 You need to download the specified JARs and add them to a 'libs' folder.
 ## Announcements and Documentation
-Here is a link to the [official CurseForge page](https://www.curseforge.com/minecraft/mc-mods/nei-emmaitar).
+Announcements can be found at the official Discord server (https://discord.gg/37GanUf).
 ## Download
 If you want to download pre-built versions of the plugin, look at the [releases tab](https://github.com/CraftedMods/nei-emmaitar/releases) or the official [CurseForge](https://www.curseforge.com/minecraft/mc-mods/nei-emmaitar/files) site.
